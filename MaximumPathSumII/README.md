@@ -5,7 +5,7 @@ A Triangle of numbers is given (described in more detail in the input/output sec
 through the triangle.
 
 ## Input Format
-A number is N is entered for the number of test cases followed by N triangles.<br>
+A number N is entered for the number of test cases followed by N triangles.<br>
 Each Triangle takes a number M for the number of rows followed by M rows.<br>
 Here is an example:
 <pre>
@@ -34,16 +34,16 @@ The first triangle looks like this:
 
 ## Output Format
 N lines with the maximum sum for the kth triangle on line k.<br>
-The example triangle given in the input section has output 23: 3 + 7 + 4 + 9
+The first triangle in the example given in the input section has output 23: 3 + 7 + 4 + 9
 
 ## How the Program Works
-We will store the whole structure in an array or arrays.<br>
+We will store the whole structure in an array of arrays.<br>
 This is a tree-like structure but two nodes can share children<br>
 The left child of triangle[i][j] is triangle[i+1][j]<br>
 Similarly, the right child of triangle[i][j] is triangle[i+1][j+1]
 
 ### Potential Pitfalls
-The most intuitive approach is to start from the top of the triangle and go down perhaps using a greedy algorithm in the process.<br>
+The most intuitive approach is to start from the top of the triangle and go down, perhaps using a greedy algorithm in the process.<br>
 Here is an extremely simple example showing why this would not work:
 <pre>
       1
@@ -52,7 +52,7 @@ Here is an extremely simple example showing why this would not work:
    /  \/  \
   2    1   1000
 </pre>
-The larget path is clearly 1 + 1 + 1000 = 1002 but a greedy algorithm would give us 1 + 2 + 2 = 5 << 1002<br>
+The largest path is clearly 1 + 1 + 1000 = 1002 but a greedy algorithm would give us 1 + 2 + 2 = 5 << 1002<br>
 Another approach is tracing every path and finding the largest one. However, this aproach has time complexity O(2^n)
 which is terrible. There is a much cleaner O(n) approach.
 
