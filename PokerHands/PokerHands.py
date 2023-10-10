@@ -1,14 +1,3 @@
-# we convert the hand the user enters into an array that is easy to compare
-# it follows this format: [value of hand, most repeating card, second most repeating card, other cards]
-# if two cards repeat the same amount, they are entered in decsending order
-# the following lists the value of each hand:
-# straight flush = 8, four of a kind = 7, full house = 6, flush = 5, straight = 4
-# three of a kind = 3, two pair = 2, single pair = 1, high card = 0
-
-
-from operator import itemgetter
-   
-
 class Poker_Hand:
     class Card:
         def __init__(self, rawData):
