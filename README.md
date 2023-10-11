@@ -1,4 +1,4 @@
 # ProjectEulerPlus
-My clean solutions to ProjectEuler+ problems. ProjectEuler+ is similar to regular ProjectEuler but the questions are more programming heavy.
-Although I have many problems solved on ProjectEuler, I only have two on ProjectEuler+ as I have started it rather recently. 
-Therefore, more solutions are soon to come.
+I created this repository to store my solutions for ProjectEuler+ challenges, which are akin to traditional ProjectEuler problems but have a stronger emphasis on programming.
+
+Having already solved numerous problems on ProjectEuler, I've recently delved into ProjectEuler+ and have currently added two solutions. Expect more solutions to follow in the near future.
